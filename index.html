@@ -5,81 +5,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Patrick Bell | Cloud & DevOps</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
   <style>
-    body {
+    :root {
+      --bg1: #050816;
+      --bg2: #0b1b3a;
+      --accent: #4cc9f0;
+      --accent2: #4361ee;
+      --text: #e6f1ff;
+      --muted: #93a4c7;
+    }
+
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--text);
+      background: linear-gradient(-45deg, var(--bg1), var(--bg2), #0a0f2c, #081028);
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease infinite;
       line-height: 1.6;
     }
 
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     header {
-      padding: 80px 20px;
       text-align: center;
-      background: #111827;
+      padding: 110px 20px 70px;
     }
 
     header h1 {
-      font-size: 42px;
-      margin: 0;
+      font-size: 52px;
+      font-weight: 800;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     header p {
+      margin-top: 12px;
+      color: var(--muted);
       font-size: 18px;
-      color: #94a3b8;
-      margin-top: 10px;
     }
 
     nav {
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
       padding: 15px;
-      background: #0b1220;
+      backdrop-filter: blur(10px);
+      background: rgba(10, 15, 40, 0.4);
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
     }
 
     nav a {
-      color: #60a5fa;
-      margin: 0 12px;
+      color: var(--text);
       text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
     }
 
     section {
       max-width: 900px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
 
     h2 {
-      color: #60a5fa;
-      margin-bottom: 10px;
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: var(--accent);
     }
 
     .card {
-      background: #111827;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 16px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
       margin-bottom: 15px;
+      transition: transform 0.3s ease, border 0.3s ease;
     }
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #64748b;
-      font-size: 14px;
+    .card:hover {
+      transform: translateY(-5px);
+      border: 1px solid rgba(76, 201, 240, 0.4);
     }
 
     .btn {
       display: inline-block;
-      padding: 10px 15px;
-      background: #2563eb;
+      margin-top: 15px;
+      padding: 12px 18px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
       color: white;
-      border-radius: 6px;
       text-decoration: none;
-      margin-top: 10px;
+      font-weight: 600;
+      transition: 0.3s;
     }
 
     .btn:hover {
-      background: #1d4ed8;
+      opacity: 0.85;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: var(--muted);
+      font-size: 14px;
     }
   </style>
 </head>
@@ -102,8 +154,7 @@
 <section id="about">
   <h2>Über mich</h2>
   <div class="card">
-    Ich bin IT- und Cloud-interessiert mit Fokus auf AWS, Infrastructure as Code und moderne Webtechnologien.
-    Ich baue gerne skalierbare und saubere Systeme.
+    Cloud & DevOps Enthusiast mit Fokus auf AWS, Infrastructure as Code und moderne Webarchitekturen.
   </div>
 </section>
 
@@ -119,7 +170,7 @@
 
   <div class="card">
     <strong>Portfolio Website</strong><br>
-    Diese Website – gehostet auf Cloudflare Pages mit eigener Domain.
+    Moderne statische Website mit Cloud Hosting und Custom Domain.
   </div>
 
   <div class="card">
@@ -138,7 +189,7 @@
 </section>
 
 <footer>
-  © 2026 Patrick Bell · Built with HTML & Cloudflare Pages
+  © 2026 Patrick Bell · Built with GitHub Pages
 </footer>
 
 </body>
