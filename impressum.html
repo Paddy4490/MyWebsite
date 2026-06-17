@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impressum | Patrick George Bell</title>
+
+  <style>
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter_18pt-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter_18pt-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter_18pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --accent: #2f6fff;
+  --accent2: #5b8cff;
+  --text: #0b1220;
+  --muted: #5a6b85;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #ffffff, #f3f5f9);
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+header h1 {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  backdrop-filter: blur(10px);
+  background: rgba(10, 15, 40, 0.4);
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+h2 {
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  padding: 25px;
+  border-radius: 16px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: var(--muted);
+  font-size: 14px;
+}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Impressum</h1>
+</header>
+
+<nav>
+  <a href="index.html">Startseite</a>
+  <a href="index.html#about">Über mich</a>
+  <a href="index.html#contact">Kontakt</a>
+</nav>
+
+<section>
+  <h2>Angaben gemäß § 5 TMG</h2>
+  <div class="card">
+    <p>
+      Patrick George Bell<br>
+      IT-Spezialist / Systemadministrator<br>
+      Frankfurt am Main<br>
+      Deutschland
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Kontakt</h2>
+  <div class="card">
+    <p>E-Mail: bell.patrick@outlook.de</p>
+  </div>
+</section>
+
+<section>
+  <h2>Verantwortlich für den Inhalt</h2>
+  <div class="card">
+    <p>
+      Patrick George Bell<br>
+      gemäß § 55 Abs. 2 RStV
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Patrick George Bell · <a href="index.html">Zurück zur Startseite</a>
+</footer>
+
+</body>
+</html>
