@@ -186,6 +186,21 @@
   font-size: 18px;
   opacity: 0.85;
 }
+
+    .kontakt .row {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.kontakt .label {
+  width: 100px; /* sorgt für gleiche Startposition */
+  font-weight: 500;
+}
+
+.kontakt .value {
+  flex: 1;
+}
   </style>
 </head>
 
@@ -275,15 +290,21 @@ IT ist für mich mehr als nur ein Beruf – es ist eine Leidenschaft. Ich analys
 
 <section id="contact">
   <h2>Kontakt</h2>
-  <div class="card">
-    <p>E-Mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bell.patrick@outlook.de</p>
-    <p>
-      LinkedIn:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="https://www.linkedin.com/in/patrick-george-bell/" target="_blank">
+<div class="kontakt">
+  <div class="row">
+    <div class="label">E-Mail:</div>
+    <div class="value">bell.patrick@outlook.de</div>
+  </div>
+
+  <div class="row">
+    <div class="label">LinkedIn:</div>
+    <div class="value">
+      <a href="https://linkedin.com/in/patrick-george-bell/">
         linkedin.com/in/patrick-george-bell/
       </a>
-    </p>
+    </div>
   </div>
+</div>
 </section>
 
 <footer>
