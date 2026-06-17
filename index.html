@@ -65,20 +65,9 @@
     }
 
     header {
-  text-align: center;
-  padding: 110px 20px 70px;
-
-  background:
-    linear-gradient(
-      rgba(255,255,255,0.25),
-      rgba(255,255,255,0.25)
-    ),
-    url("images/Frankfurt_bg_2.webp");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+      text-align: center;
+      padding: 110px 20px 70px;
+    }
 
     header h1 {
       font-size: 52px;
@@ -93,6 +82,29 @@
       margin-top: 12px;
       color: var(--muted);
       font-size: 18px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      backdrop-filter: blur(10px);
+      background: rgba(10, 15, 40, 0.4);
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
     }
 
     section {
@@ -146,72 +158,28 @@
       color: var(--muted);
       font-size: 14px;
     }
-   .hero {
-  height: 400px;
-  background: url("images/Frankfurt_bg_2.webp") center/cover no-repeat;
-}
-
-.intro {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.hero h1 {
-  font-size: 52px;
-  font-weight: 800;
-  color: white;
-}
-
-.hero h2 {
-  font-size: 26px;
-  margin-top: 20px;
-}
-
-.hero p {
-  margin-top: 10px;
-  font-size: 18px;
-  opacity: 0.85;
-}
-
-    .kontakt .row {
-  display: flex;
-  gap: 10px;
-  align-items: baseline;
-}
-
-.kontakt .label {
-  width: 100px; /* sorgt für gleiche Startposition */
-  font-weight: 500;
-}
-
-.kontakt .value {
-  flex: 1;
-}
   </style>
 </head>
 
 <body>
 
-<header class="hero"></header>
-
-<section class="intro">
+<header>
   <h1>Patrick George Bell, B. Sc.</h1>
-  <p>Cloud & Cybersecurity Engineer ...</p>
-</section>
+  <p>Cloud & Cybersecurity Engineer | Windows & IT Infrastructure Specialist</p>
+  <br>
+  <h1 style="font-size: 28px;">
+  Ihr kompetenter IT-Ansprechpartner in Frankfurt am Main
+  </h1>
+</header>
+
+
+  
+<nav>
+  <a href="#about">Über mich</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projekte</a>
+  <a href="#contact">Kontakt</a>
+</nav>
 
 <section id="about">
   <h2>Über mich</h2>
@@ -290,21 +258,15 @@ IT ist für mich mehr als nur ein Beruf – es ist eine Leidenschaft. Ich analys
 
 <section id="contact">
   <h2>Kontakt</h2>
-<div class="kontakt">
-  <div class="row">
-    <div class="label">E-Mail:</div>
-    <div class="value">bell.patrick@outlook.de</div>
-  </div>
-
-  <div class="row">
-    <div class="label">LinkedIn:</div>
-    <div class="value">
-      <a href="https://linkedin.com/in/patrick-george-bell/">
+  <div class="card">
+    <p>E-Mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bell.patrick@outlook.de</p>
+    <p>
+      LinkedIn:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.linkedin.com/in/patrick-george-bell/" target="_blank">
         linkedin.com/in/patrick-george-bell/
       </a>
-    </div>
+    </p>
   </div>
-</div>
 </section>
 
 <footer>
