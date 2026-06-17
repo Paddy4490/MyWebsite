@@ -158,6 +158,19 @@
       color: var(--muted);
       font-size: 14px;
     }
+    
+    .contact-grid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  column-gap: 12px;
+  row-gap: 8px;
+  align-items: start;
+}
+
+.contact-grid .label {
+  font-weight: 600;
+  color: var(--muted);
+}
   </style>
 </head>
 
@@ -258,20 +271,17 @@ IT ist für mich mehr als nur ein Beruf – es ist eine Leidenschaft. Ich analys
 
 <section id="contact">
   <h2>Kontakt</h2>
-  <div class="card contact">
 
-    <div class="row">
-      <span class="label">E-Mail:</span>
-      <span class="value">bell.patrick@outlook.de</span>
-    </div>
+  <div class="card contact-grid">
 
-    <div class="row">
-      <span class="label">LinkedIn:</span>
-      <span class="value">
-        <a href="https://www.linkedin.com/in/patrick-george-bell/" target="_blank">
-          linkedin.com/in/patrick-george-bell/
-        </a>
-      </span>
+    <div class="label">E-Mail:</div>
+    <div class="value">bell.patrick@outlook.de</div>
+
+    <div class="label">LinkedIn:</div>
+    <div class="value">
+      <a href="https://www.linkedin.com/in/patrick-george-bell/" target="_blank">
+        linkedin.com/in/patrick-george-bell/
+      </a>
     </div>
 
   </div>
