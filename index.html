@@ -146,12 +146,14 @@
       color: var(--muted);
       font-size: 14px;
     }
-    .hero {
-  position: relative;
-  text-align: center;
-  padding: 120px 20px;
+   .hero {
+  height: 400px;
   background: url("images/Frankfurt_bg_2.webp") center/cover no-repeat;
-  color: white;
+}
+
+.intro {
+  text-align: center;
+  padding: 60px 20px;
 }
 
 .hero::before {
@@ -189,14 +191,12 @@
 
 <body>
 
-<header class="hero">
-  <div class="hero-content">
-    <h1>Patrick George Bell, B. Sc.</h1>
-    <p>Cloud & Cybersecurity Engineer | Windows & IT Infrastructure Specialist</p>
+<header class="hero"></header>
 
-    <h2>Ihr kompetenter IT-Ansprechpartner in Frankfurt am Main</h2>
-  </div>
-</header>
+<section class="intro">
+  <h1>Patrick George Bell, B. Sc.</h1>
+  <p>Cloud & Cybersecurity Engineer ...</p>
+</section>
 
 <section id="about">
   <h2>Über mich</h2>
